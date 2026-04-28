@@ -9,29 +9,32 @@ export function Navbar() {
 
   return (
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
-        <div className="container flex h-14 items-center px-4 md:px-8 justify-between">
+        <div className="container flex h-16 items-center px-6 md:px-12 justify-between mx-auto">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2 bg-black px-3 py-1 rounded-sm">
-              <span className="font-bold text-white tracking-tight">VoiceRx</span>
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xl">V</span>
+              </div>
+              <span className="font-bold text-slate-900 tracking-tight text-xl">VoiceRx</span>
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
-            <Link href="/contact" className="text-sm font-medium text-foreground/60 hover:text-foreground">
-              Contact
+          <div className="flex items-center gap-6">
+            <Link href="/about" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">
+              About
             </Link>
             {!isSignedIn ? (
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                   <SignInButton mode="modal">
-                    <Button variant="ghost">Login</Button>
+                    <Button variant="ghost" className="font-semibold text-slate-600 hover:text-blue-600">Login</Button>
                   </SignInButton>
 
                   <SignUpButton mode="modal">
-                    <Button>Sign Up</Button>
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl px-5">Sign Up</Button>
                   </SignUpButton>
                 </div>
             ) : (
-                <UserButton />
+                <UserButton afterSignOutUrl="/" />
             )}
           </div>
         </div>

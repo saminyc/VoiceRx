@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import {ClerkProvider} from "@clerk/nextjs";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "VoiceRx",
@@ -16,7 +18,7 @@ export default function RootLayout({
   return (
       <ClerkProvider>
     <html lang="en">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`${inter.className} min-h-full flex flex-col`}>{children}</body>
     </html>
       </ClerkProvider>
   );
