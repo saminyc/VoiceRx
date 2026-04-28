@@ -1,0 +1,251 @@
+01-app          02-pages        03-architecture 04-community    index.md
+node_modules/next/dist/docs/01-app:
+01-getting-started      03-api-reference        index.md
+02-guides               04-glossary.md
+node_modules/next/dist/docs/01-app/01-getting-started:
+01-installation.md                      11-css.md
+02-project-structure.md                 12-images.md
+03-layouts-and-pages.md                 13-fonts.md
+04-linking-and-navigating.md            14-metadata-and-og-images.md
+05-server-and-client-components.md      15-route-handlers.md
+06-fetching-data.md                     16-proxy.md
+07-mutating-data.md                     17-deploying.md
+08-caching.md                           18-upgrading.md
+09-revalidating.md                      index.md
+10-error-handling.md
+node_modules/next/dist/docs/01-app/02-guides:
+ai-agents.md                            memory-usage.md
+analytics.md                            migrating
+authentication.md                       migrating-to-cache-components.md
+backend-for-frontend.md                 multi-tenant.md
+caching-without-cache-components.md     multi-zones.md
+cdn-caching.md                          open-telemetry.md
+ci-build-caching.md                     package-bundling.md
+content-security-policy.md              ppr-platform-guide.md
+css-in-js.md                            prefetching.md
+custom-server.md                        preserving-ui-state.md
+data-security.md                        production-checklist.md
+debugging.md                            progressive-web-apps.md
+deploying-to-platforms.md               public-static-pages.md
+draft-mode.md                           redirecting.md
+environment-variables.md                rendering-philosophy.md
+forms.md                                sass.md
+how-revalidation-works.md               scripts.md
+incremental-static-regeneration.md      self-hosting.md
+index.md                                single-page-applications.md
+instant-navigation.md                   static-exports.md
+instrumentation.md                      streaming.md
+internationalization.md                 tailwind-v3-css.md
+json-ld.md                              testing
+lazy-loading.md                         third-party-libraries.md
+local-development.md                    upgrading
+mcp.md                                  videos.md
+mdx.md                                  view-transitions.md
+node_modules/next/dist/docs/01-app/02-guides/migrating:
+app-router-migration.md         from-vite.md
+from-create-react-app.md        index.md
+node_modules/next/dist/docs/01-app/02-guides/testing:
+cypress.md      index.md        jest.md         playwright.md   vitest.md
+node_modules/next/dist/docs/01-app/02-guides/upgrading:
+codemods.md     index.md        version-14.md   version-15.md   version-16.md
+node_modules/next/dist/docs/01-app/03-api-reference:
+01-directives           05-config               08-turbopack.md
+02-components           06-cli                  index.md
+03-file-conventions     07-adapters
+04-functions            07-edge.md
+node_modules/next/dist/docs/01-app/03-api-reference/01-directives:
+index.md                use-cache-remote.md     use-client.md
+use-cache-private.md    use-cache.md            use-server.md
+node_modules/next/dist/docs/01-app/03-api-reference/02-components:
+font.md         image.md        link.md
+form.md         index.md        script.md
+node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions:
+01-metadata                     mdx-components.md
+02-route-segment-config         not-found.md
+default.md                      page.md
+dynamic-routes.md               parallel-routes.md
+error.md                        proxy.md
+forbidden.md                    public-folder.md
+index.md                        route-groups.md
+instrumentation-client.md       route.md
+instrumentation.md              src-folder.md
+intercepting-routes.md          template.md
+layout.md                       unauthorized.md
+loading.md
+node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/01-metadata:
+app-icons.md            manifest.md             robots.md
+index.md                opengraph-image.md      sitemap.md
+node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/02-route-segment-config:
+dynamicParams.md        instant.md              preferredRegion.md
+index.md                maxDuration.md          runtime.md
+node_modules/next/dist/docs/01-app/03-api-reference/04-functions:
+after.md                        permanentRedirect.md
+cacheLife.md                    redirect.md
+cacheTag.md                     refresh.md
+catchError.md                   revalidatePath.md
+connection.md                   revalidateTag.md
+cookies.md                      unauthorized.md
+draft-mode.md                   unstable_cache.md
+fetch.md                        unstable_noStore.md
+forbidden.md                    unstable_rethrow.md
+generate-image-metadata.md      updateTag.md
+generate-metadata.md            use-link-status.md
+generate-sitemaps.md            use-params.md
+generate-static-params.md       use-pathname.md
+generate-viewport.md            use-report-web-vitals.md
+headers.md                      use-router.md
+image-response.md               use-search-params.md
+index.md                        use-selected-layout-segment.md
+next-request.md                 use-selected-layout-segments.md
+next-response.md                userAgent.md
+not-found.md
+node_modules/next/dist/docs/01-app/03-api-reference/05-config:
+01-next-config-js       03-eslint.md
+02-typescript.md        index.md
+node_modules/next/dist/docs/01-app/03-api-reference/05-config/01-next-config-js:
+adapterPath.md                  optimizePackageImports.md
+allowedDevOrigins.md            output.md
+appDir.md                       pageExtensions.md
+assetPrefix.md                  poweredByHeader.md
+authInterrupts.md               productionBrowserSourceMaps.md
+basePath.md                     proxyClientMaxBodySize.md
+cacheComponents.md              reactCompiler.md
+cacheHandlers.md                reactMaxHeadersLength.md
+cacheLife.md                    reactStrictMode.md
+compress.md                     redirects.md
+crossOrigin.md                  rewrites.md
+cssChunking.md                  sassOptions.md
+deploymentId.md                 serverActions.md
+devIndicators.md                serverComponentsHmrCache.md
+distDir.md                      serverExternalPackages.md
+env.md                          staleTimes.md
+expireTime.md                   staticGeneration.md
+exportPathMap.md                taint.md
+generateBuildId.md              trailingSlash.md
+generateEtags.md                transpilePackages.md
+headers.md                      turbopack.md
+htmlLimitedBots.md              turbopackFileSystemCache.md
+httpAgentOptions.md             turbopackIgnoreIssue.md
+images.md                       typedRoutes.md
+incrementalCacheHandlerPath.md  typescript.md
+index.md                        urlImports.md
+inlineCss.md                    useLightningcss.md
+logging.md                      viewTransition.md
+mdxRs.md                        webVitalsAttribution.md
+onDemandEntries.md              webpack.md
+node_modules/next/dist/docs/01-app/03-api-reference/06-cli:
+create-next-app.md      index.md                next.md
+node_modules/next/dist/docs/01-app/03-api-reference/07-adapters:
+01-configuration.md                     07-runtime-integration.md
+02-creating-an-adapter.md               08-invoking-entrypoints.md
+03-api-reference.md                     09-output-types.md
+04-testing-adapters.md                  10-routing-information.md
+05-routing-with-next-routing.md         11-use-cases.md
+06-implementing-ppr-in-an-adapter.md    index.md
+node_modules/next/dist/docs/02-pages:
+01-getting-started              04-api-reference
+02-guides                       index.md
+03-building-your-application
+node_modules/next/dist/docs/02-pages/01-getting-started:
+01-installation.md      05-fonts.md             index.md
+02-project-structure.md 06-css.md
+04-images.md            11-deploying.md
+node_modules/next/dist/docs/02-pages/02-guides:
+analytics.md                            migrating
+authentication.md                       multi-zones.md
+babel.md                                open-telemetry.md
+ci-build-caching.md                     package-bundling.md
+content-security-policy.md              post-css.md
+css-in-js.md                            preview-mode.md
+custom-server.md                        production-checklist.md
+debugging.md                            redirecting.md
+draft-mode.md                           sass.md
+environment-variables.md                scripts.md
+forms.md                                self-hosting.md
+incremental-static-regeneration.md      static-exports.md
+index.md                                tailwind-v3-css.md
+instrumentation.md                      testing
+internationalization.md                 third-party-libraries.md
+lazy-loading.md                         upgrading
+mdx.md
+node_modules/next/dist/docs/02-pages/02-guides/migrating:
+app-router-migration.md         from-vite.md
+from-create-react-app.md        index.md
+node_modules/next/dist/docs/02-pages/02-guides/testing:
+cypress.md      index.md        jest.md         playwright.md   vitest.md
+node_modules/next/dist/docs/02-pages/02-guides/upgrading:
+codemods.md     version-10.md   version-12.md   version-14.md
+index.md        version-11.md   version-13.md   version-9.md
+node_modules/next/dist/docs/02-pages/03-building-your-application:
+01-routing              03-data-fetching        index.md
+02-rendering            06-configuring
+node_modules/next/dist/docs/02-pages/03-building-your-application/01-routing:
+01-pages-and-layouts.md         06-custom-document.md
+02-dynamic-routes.md            07-api-routes.md
+03-linking-and-navigating.md    08-custom-error.md
+05-custom-app.md                index.md
+node_modules/next/dist/docs/02-pages/03-building-your-application/02-rendering:
+01-server-side-rendering.md             05-client-side-rendering.md
+02-static-site-generation.md            index.md
+04-automatic-static-optimization.md
+node_modules/next/dist/docs/02-pages/03-building-your-application/03-data-fetching:
+01-get-static-props.md          03-get-server-side-props.md
+02-get-static-paths.md          05-client-side.md
+03-forms-and-mutations.md       index.md
+node_modules/next/dist/docs/02-pages/03-building-your-application/06-configuring:
+12-error-handling.md    index.md
+node_modules/next/dist/docs/02-pages/04-api-reference:
+01-components           04-config               06-edge.md
+02-file-conventions     05-cli                  08-turbopack.md
+03-functions            06-adapters             index.md
+node_modules/next/dist/docs/02-pages/04-api-reference/01-components:
+font.md         head.md         image.md        link.md
+form.md         image-legacy.md index.md        script.md
+node_modules/next/dist/docs/02-pages/04-api-reference/02-file-conventions:
+index.md                proxy.md                src-folder.md
+instrumentation.md      public-folder.md
+node_modules/next/dist/docs/02-pages/04-api-reference/03-functions:
+get-initial-props.md            next-response.md
+get-server-side-props.md        use-params.md
+get-static-paths.md             use-report-web-vitals.md
+get-static-props.md             use-router.md
+index.md                        use-search-params.md
+next-request.md                 userAgent.md
+node_modules/next/dist/docs/02-pages/04-api-reference/04-config:
+01-next-config-js       02-eslint.md
+01-typescript.md        index.md
+node_modules/next/dist/docs/02-pages/04-api-reference/04-config/01-next-config-js:
+adapterPath.md                          onDemandEntries.md
+allowedDevOrigins.md                    optimizePackageImports.md
+assetPrefix.md                          output.md
+basePath.md                             pageExtensions.md
+bundlePagesRouterDependencies.md        poweredByHeader.md
+compress.md                             productionBrowserSourceMaps.md
+crossOrigin.md                          proxyClientMaxBodySize.md
+deploymentId.md                         reactStrictMode.md
+devIndicators.md                        redirects.md
+distDir.md                              rewrites.md
+env.md                                  serverExternalPackages.md
+exportPathMap.md                        trailingSlash.md
+generateBuildId.md                      transpilePackages.md
+generateEtags.md                        turbopack.md
+headers.md                              typescript.md
+httpAgentOptions.md                     urlImports.md
+images.md                               useLightningcss.md
+index.md                                webVitalsAttribution.md
+logging.md                              webpack.md
+node_modules/next/dist/docs/02-pages/04-api-reference/05-cli:
+create-next-app.md      index.md                next.md
+node_modules/next/dist/docs/02-pages/04-api-reference/06-adapters:
+01-configuration.md                     07-runtime-integration.md
+02-creating-an-adapter.md               08-invoking-entrypoints.md
+03-api-reference.md                     09-output-types.md
+04-testing-adapters.md                  10-routing-information.md
+05-routing-with-next-routing.md         11-use-cases.md
+06-implementing-ppr-in-an-adapter.md    index.md
+node_modules/next/dist/docs/03-architecture:
+accessibility.md        index.md                supported-browsers.md
+fast-refresh.md         nextjs-compiler.md
+node_modules/next/dist/docs/04-community:
+01-contribution-guide.md        index.md
+02-rspack.md
