@@ -26,7 +26,7 @@ export function Navbar() {
                       href="/dashboard"
                       className="text-sm font-semibold text-slate-600 transition-colors hover:text-blue-600"
                   >
-                    VoiceRx
+                    Dashboard
                   </Link>
 
                   <Link
