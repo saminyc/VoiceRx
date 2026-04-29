@@ -9,35 +9,51 @@ export function Navbar() {
 
   return (
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
-        <div className="container flex h-16 items-center px-6 md:px-12 justify-between mx-auto">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">V</span>
-              </div>
-              <span className="font-bold text-slate-900 tracking-tight text-xl">VoiceRx</span>
-            </Link>
-          </div>
+        <div className="container mx-auto flex h-16 items-center justify-between px-6 md:px-12">
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
+              <span className="text-xl font-bold text-white">V</span>
+            </div>
+            <span className="text-xl font-bold tracking-tight text-slate-900">
+            VoiceRx
+          </span>
+          </Link>
 
           <div className="flex items-center gap-6">
-            {isSignedIn?(<Link href="/dashboard" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">
-              VoiceRx
-            </Link>):null}
-            <Link href="/contact" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">
-              Contact
-            </Link>
+            {isSignedIn && (
+                <>
+                  <Link
+                      href="/dashboard"
+                      className="text-sm font-semibold text-slate-600 transition-colors hover:text-blue-600"
+                  >
+                    VoiceRx
+                  </Link>
+
+                  <Link
+                      href="/contact"
+                      className="text-sm font-semibold text-slate-600 transition-colors hover:text-blue-600"
+                  >
+                    Contact
+                  </Link>
+                </>
+            )}
+
             {!isSignedIn ? (
                 <div className="flex items-center gap-3">
                   <SignInButton mode="modal">
-                    <Button variant="ghost" className="font-semibold text-slate-600 hover:text-blue-600">Login</Button>
+                    <Button variant="ghost" className="font-semibold text-slate-600 hover:text-blue-600">
+                      Login
+                    </Button>
                   </SignInButton>
 
                   <SignUpButton mode="modal">
-                    <Button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl px-5">Sign Up</Button>
+                    <Button className="rounded-xl bg-blue-600 px-5 font-semibold text-white hover:bg-blue-700">
+                      Sign Up
+                    </Button>
                   </SignUpButton>
                 </div>
             ) : (
-                <UserButton/>
+                <UserButton />
             )}
           </div>
         </div>
