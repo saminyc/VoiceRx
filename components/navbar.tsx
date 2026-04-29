@@ -20,8 +20,11 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="/about" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">
-              About
+            {isSignedIn?(<Link href="/dashboard" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">
+              VoiceRx
+            </Link>):null}
+            <Link href="/contact" className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">
+              Contact
             </Link>
             {!isSignedIn ? (
                 <div className="flex items-center gap-3">
@@ -34,7 +37,7 @@ export function Navbar() {
                   </SignUpButton>
                 </div>
             ) : (
-                <UserButton afterSignOutUrl="/" />
+                <UserButton/>
             )}
           </div>
         </div>
